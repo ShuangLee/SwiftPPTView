@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2085D5FF531CC00912CEDA9F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC87FCFE54EA6C311064477B /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		C4B4F60B1D1BCE87002B4198 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F60A1D1BCE87002B4198 /* AppDelegate.swift */; };
+		C4B4F60D1D1BCE87002B4198 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F60C1D1BCE87002B4198 /* ViewController.swift */; };
+		C4B4F6101D1BCE87002B4198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B4F60E1D1BCE87002B4198 /* Main.storyboard */; };
+		C4B4F6121D1BCE87002B4198 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B4F6111D1BCE87002B4198 /* Assets.xcassets */; };
+		C4B4F6151D1BCE87002B4198 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4B4F6131D1BCE87002B4198 /* LaunchScreen.storyboard */; };
+		C4B4F6201D1BCE87002B4198 /* SwiftPPTViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F61F1D1BCE87002B4198 /* SwiftPPTViewTests.swift */; };
+		C4B4F62B1D1BCE87002B4198 /* SwiftPPTViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F62A1D1BCE87002B4198 /* SwiftPPTViewUITests.swift */; };
+		C4B4F6401D1BCF04002B4198 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F63A1D1BCF04002B4198 /* DataModel.swift */; };
+		C4B4F6411D1BCF04002B4198 /* SwiftPPTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F63B1D1BCF04002B4198 /* SwiftPPTView.swift */; };
+		C4B4F6421D1BCF04002B4198 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F63C1D1BCF04002B4198 /* UIImageView+Extension.swift */; };
+		C4B4F6431D1BCF04002B4198 /* GTQPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F63E1D1BCF04002B4198 /* GTQPageControl.swift */; };
+		C4B4F6441D1BCF04002B4198 /* PageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B4F63F1D1BCF04002B4198 /* PageScrollView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4B4F61C1D1BCE87002B4198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4B4F5FF1D1BCE87002B4198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B4F6061D1BCE87002B4198;
+			remoteInfo = SwiftPPTView;
+		};
+		C4B4F6271D1BCE87002B4198 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4B4F5FF1D1BCE87002B4198 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4B4F6061D1BCE87002B4198;
+			remoteInfo = SwiftPPTView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		35D0F8902AF2F993D6429383 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AC87FCFE54EA6C311064477B /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5C73B3114B02E354211E93B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		C4B4F6071D1BCE87002B4198 /* SwiftPPTView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftPPTView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B4F60A1D1BCE87002B4198 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C4B4F60C1D1BCE87002B4198 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C4B4F60F1D1BCE87002B4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4B4F6111D1BCE87002B4198 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4B4F6141D1BCE87002B4198 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4B4F6161D1BCE87002B4198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B4F61B1D1BCE87002B4198 /* SwiftPPTViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPPTViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B4F61F1D1BCE87002B4198 /* SwiftPPTViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPPTViewTests.swift; sourceTree = "<group>"; };
+		C4B4F6211D1BCE87002B4198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B4F6261D1BCE87002B4198 /* SwiftPPTViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftPPTViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B4F62A1D1BCE87002B4198 /* SwiftPPTViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftPPTViewUITests.swift; sourceTree = "<group>"; };
+		C4B4F62C1D1BCE87002B4198 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B4F63A1D1BCF04002B4198 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		C4B4F63B1D1BCF04002B4198 /* SwiftPPTView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftPPTView.swift; sourceTree = "<group>"; };
+		C4B4F63C1D1BCF04002B4198 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		C4B4F63E1D1BCF04002B4198 /* GTQPageControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GTQPageControl.swift; sourceTree = "<group>"; };
+		C4B4F63F1D1BCF04002B4198 /* PageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageScrollView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4B4F6041D1BCE87002B4198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2085D5FF531CC00912CEDA9F /* Pods.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4F6181D1BCE87002B4198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4F6231D1BCE87002B4198 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		40B22FB5E0FE8C3A435C54F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35D0F8902AF2F993D6429383 /* Pods.debug.xcconfig */,
+				B5C73B3114B02E354211E93B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		56215E9AFD5D6838617416E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC87FCFE54EA6C311064477B /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4B4F5FE1D1BCE87002B4198 = {
+			isa = PBXGroup;
+			children = (
+				C4B4F6091D1BCE87002B4198 /* SwiftPPTView */,
+				C4B4F61E1D1BCE87002B4198 /* SwiftPPTViewTests */,
+				C4B4F6291D1BCE87002B4198 /* SwiftPPTViewUITests */,
+				C4B4F6081D1BCE87002B4198 /* Products */,
+				40B22FB5E0FE8C3A435C54F5 /* Pods */,
+				56215E9AFD5D6838617416E1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C4B4F6081D1BCE87002B4198 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4F6071D1BCE87002B4198 /* SwiftPPTView.app */,
+				C4B4F61B1D1BCE87002B4198 /* SwiftPPTViewTests.xctest */,
+				C4B4F6261D1BCE87002B4198 /* SwiftPPTViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4B4F6091D1BCE87002B4198 /* SwiftPPTView */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4F6381D1BCF04002B4198 /* SwiftPPT */,
+				C4B4F60A1D1BCE87002B4198 /* AppDelegate.swift */,
+				C4B4F60C1D1BCE87002B4198 /* ViewController.swift */,
+				C4B4F60E1D1BCE87002B4198 /* Main.storyboard */,
+				C4B4F6111D1BCE87002B4198 /* Assets.xcassets */,
+				C4B4F6131D1BCE87002B4198 /* LaunchScreen.storyboard */,
+				C4B4F6161D1BCE87002B4198 /* Info.plist */,
+			);
+			path = SwiftPPTView;
+			sourceTree = "<group>";
+		};
+		C4B4F61E1D1BCE87002B4198 /* SwiftPPTViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4F61F1D1BCE87002B4198 /* SwiftPPTViewTests.swift */,
+				C4B4F6211D1BCE87002B4198 /* Info.plist */,
+			);
+			path = SwiftPPTViewTests;
+			sourceTree = "<group>";
+		};
+		C4B4F6291D1BCE87002B4198 /* SwiftPPTViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4F62A1D1BCE87002B4198 /* SwiftPPTViewUITests.swift */,
+				C4B4F62C1D1BCE87002B4198 /* Info.plist */,
+			);
+			path = SwiftPPTViewUITests;
+			sourceTree = "<group>";
+		};
+		C4B4F6381D1BCF04002B4198 /* SwiftPPT */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4F6391D1BCF04002B4198 /* Model */,
+				C4B4F63B1D1BCF04002B4198 /* SwiftPPTView.swift */,
+				C4B4F63C1D1BCF04002B4198 /* UIImageView+Extension.swift */,
+				C4B4F63D1D1BCF04002B4198 /* View */,
+			);
+			path = SwiftPPT;
+			sourceTree = "<group>";
+		};
+		C4B4F6391D1BCF04002B4198 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4F63A1D1BCF04002B4198 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C4B4F63D1D1BCF04002B4198 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4B4F63E1D1BCF04002B4198 /* GTQPageControl.swift */,
+				C4B4F63F1D1BCF04002B4198 /* PageScrollView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4B4F6061D1BCE87002B4198 /* SwiftPPTView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B4F62F1D1BCE87002B4198 /* Build configuration list for PBXNativeTarget "SwiftPPTView" */;
+			buildPhases = (
+				161C6EDF1C14B8B5DF3B7F60 /* Check Pods Manifest.lock */,
+				C4B4F6031D1BCE87002B4198 /* Sources */,
+				C4B4F6041D1BCE87002B4198 /* Frameworks */,
+				C4B4F6051D1BCE87002B4198 /* Resources */,
+				D8F6DFE058732F12CB2C7285 /* Embed Pods Frameworks */,
+				59D507C8863FBAC73412FBEC /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftPPTView;
+			productName = SwiftPPTView;
+			productReference = C4B4F6071D1BCE87002B4198 /* SwiftPPTView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4B4F61A1D1BCE87002B4198 /* SwiftPPTViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B4F6321D1BCE87002B4198 /* Build configuration list for PBXNativeTarget "SwiftPPTViewTests" */;
+			buildPhases = (
+				C4B4F6171D1BCE87002B4198 /* Sources */,
+				C4B4F6181D1BCE87002B4198 /* Frameworks */,
+				C4B4F6191D1BCE87002B4198 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4B4F61D1D1BCE87002B4198 /* PBXTargetDependency */,
+			);
+			name = SwiftPPTViewTests;
+			productName = SwiftPPTViewTests;
+			productReference = C4B4F61B1D1BCE87002B4198 /* SwiftPPTViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4B4F6251D1BCE87002B4198 /* SwiftPPTViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4B4F6351D1BCE87002B4198 /* Build configuration list for PBXNativeTarget "SwiftPPTViewUITests" */;
+			buildPhases = (
+				C4B4F6221D1BCE87002B4198 /* Sources */,
+				C4B4F6231D1BCE87002B4198 /* Frameworks */,
+				C4B4F6241D1BCE87002B4198 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4B4F6281D1BCE87002B4198 /* PBXTargetDependency */,
+			);
+			name = SwiftPPTViewUITests;
+			productName = SwiftPPTViewUITests;
+			productReference = C4B4F6261D1BCE87002B4198 /* SwiftPPTViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4B4F5FF1D1BCE87002B4198 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Ls;
+				TargetAttributes = {
+					C4B4F6061D1BCE87002B4198 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
+					C4B4F61A1D1BCE87002B4198 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C4B4F6061D1BCE87002B4198;
+					};
+					C4B4F6251D1BCE87002B4198 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = C4B4F6061D1BCE87002B4198;
+					};
+				};
+			};
+			buildConfigurationList = C4B4F6021D1BCE87002B4198 /* Build configuration list for PBXProject "SwiftPPTView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4B4F5FE1D1BCE87002B4198;
+			productRefGroup = C4B4F6081D1BCE87002B4198 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4B4F6061D1BCE87002B4198 /* SwiftPPTView */,
+				C4B4F61A1D1BCE87002B4198 /* SwiftPPTViewTests */,
+				C4B4F6251D1BCE87002B4198 /* SwiftPPTViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4B4F6051D1BCE87002B4198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B4F6151D1BCE87002B4198 /* LaunchScreen.storyboard in Resources */,
+				C4B4F6121D1BCE87002B4198 /* Assets.xcassets in Resources */,
+				C4B4F6101D1BCE87002B4198 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4F6191D1BCE87002B4198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4F6241D1BCE87002B4198 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		161C6EDF1C14B8B5DF3B7F60 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		59D507C8863FBAC73412FBEC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8F6DFE058732F12CB2C7285 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4B4F6031D1BCE87002B4198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B4F6421D1BCF04002B4198 /* UIImageView+Extension.swift in Sources */,
+				C4B4F6431D1BCF04002B4198 /* GTQPageControl.swift in Sources */,
+				C4B4F60D1D1BCE87002B4198 /* ViewController.swift in Sources */,
+				C4B4F6411D1BCF04002B4198 /* SwiftPPTView.swift in Sources */,
+				C4B4F60B1D1BCE87002B4198 /* AppDelegate.swift in Sources */,
+				C4B4F6441D1BCF04002B4198 /* PageScrollView.swift in Sources */,
+				C4B4F6401D1BCF04002B4198 /* DataModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4F6171D1BCE87002B4198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B4F6201D1BCE87002B4198 /* SwiftPPTViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4B4F6221D1BCE87002B4198 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4B4F62B1D1BCE87002B4198 /* SwiftPPTViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4B4F61D1D1BCE87002B4198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B4F6061D1BCE87002B4198 /* SwiftPPTView */;
+			targetProxy = C4B4F61C1D1BCE87002B4198 /* PBXContainerItemProxy */;
+		};
+		C4B4F6281D1BCE87002B4198 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4B4F6061D1BCE87002B4198 /* SwiftPPTView */;
+			targetProxy = C4B4F6271D1BCE87002B4198 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4B4F60E1D1BCE87002B4198 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4B4F60F1D1BCE87002B4198 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4B4F6131D1BCE87002B4198 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4B4F6141D1BCE87002B4198 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4B4F62D1D1BCE87002B4198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C4B4F62E1D1BCE87002B4198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4B4F6301D1BCE87002B4198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35D0F8902AF2F993D6429383 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftPPTView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtq.SwiftPPTView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C4B4F6311D1BCE87002B4198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5C73B3114B02E354211E93B /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SwiftPPTView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtq.SwiftPPTView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C4B4F6331D1BCE87002B4198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftPPTViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtq.SwiftPPTViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPPTView.app/SwiftPPTView";
+			};
+			name = Debug;
+		};
+		C4B4F6341D1BCE87002B4198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SwiftPPTViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtq.SwiftPPTViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftPPTView.app/SwiftPPTView";
+			};
+			name = Release;
+		};
+		C4B4F6361D1BCE87002B4198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftPPTViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtq.SwiftPPTViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftPPTView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		C4B4F6371D1BCE87002B4198 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SwiftPPTViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.gtq.SwiftPPTViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SwiftPPTView;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4B4F6021D1BCE87002B4198 /* Build configuration list for PBXProject "SwiftPPTView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B4F62D1D1BCE87002B4198 /* Debug */,
+				C4B4F62E1D1BCE87002B4198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B4F62F1D1BCE87002B4198 /* Build configuration list for PBXNativeTarget "SwiftPPTView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B4F6301D1BCE87002B4198 /* Debug */,
+				C4B4F6311D1BCE87002B4198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B4F6321D1BCE87002B4198 /* Build configuration list for PBXNativeTarget "SwiftPPTViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B4F6331D1BCE87002B4198 /* Debug */,
+				C4B4F6341D1BCE87002B4198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4B4F6351D1BCE87002B4198 /* Build configuration list for PBXNativeTarget "SwiftPPTViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4B4F6361D1BCE87002B4198 /* Debug */,
+				C4B4F6371D1BCE87002B4198 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4B4F5FF1D1BCE87002B4198 /* Project object */;
+}
